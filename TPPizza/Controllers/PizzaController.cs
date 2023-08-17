@@ -1,28 +1,37 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using BO;
+using System;
 
 namespace TPPizza.Controllers
 {
     public class PizzaController : Controller
     {
+        private static IList<Pizza> _PizzasMock = GetPizzasMock();
+
         // GET: PizzaController
         public ActionResult Index()
         {
-            IList<Pizza> pizzas = PizzasMock;
+            IList<Pizza> pizzas = _PizzasMock;
             return View(pizzas);
         }
 
         // GET: PizzaController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            Pizza? pizza = GetPizza(id);
+            if (pizza == null)
+            {
+                return View(nameof(Index));
+            }
+            return View(pizza);
         }
 
         // GET: PizzaController/Create
         public ActionResult Create()
         {
-            return View();
+            IList<Pate> pates = PatesDisponibles;
+            return View(pates);
         }
 
         // POST: PizzaController/Create
@@ -64,7 +73,12 @@ namespace TPPizza.Controllers
         // GET: PizzaController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            Pizza? pizza = GetPizza(id);
+            if (pizza == null)
+            {
+                return View(nameof(Index));
+            }
+            return View(pizza);
         }
 
         // POST: PizzaController/Delete/5
@@ -74,11 +88,14 @@ namespace TPPizza.Controllers
         {
             try
             {
+                Pizza? pizzaToDelete = GetPizza(id);
+                if (pizzaToDelete == null) { return NotFound(); };
+                _PizzasMock.Remove(pizzaToDelete);
                 return RedirectToAction(nameof(Index));
             }
             catch
             {
-                return View();
+                return View(nameof(Index), _PizzasMock);
             }
         }
 
@@ -102,23 +119,31 @@ namespace TPPizza.Controllers
                     new Pate{ Id=4,Nom="Pate épaisse, base tomate"}
                 };
 
-        public static List<Pizza> PizzasMock => new List<Pizza>
+        private static List<Pizza> GetPizzasMock()
         {
-            new Pizza{
-                    Id=1, 
-                    Nom="Margarita", 
-                    Pate=PatesDisponibles.Single(x => x.Id==1), 
-                    Ingredients=new List<Ingredient>{ IngredientsDisponibles.Single(x => x.Id==1) }
-            },
-            new Pizza{
-                    Id=2,
-                    Nom="Champi",
-                    Pate=PatesDisponibles.Single(x => x.Id==2),
-                    Ingredients=new List<Ingredient>{ 
-                        IngredientsDisponibles.Single(x => x.Id==1),
-                        IngredientsDisponibles.Single(x => x.Id==7)
-                    }
-            },
-        };
+            return new List<Pizza>
+            {
+                new Pizza{
+                        Id=1,
+                        Nom="Margarita",
+                        Pate=PatesDisponibles.Single(x => x.Id==1),
+                        Ingredients=new List<Ingredient>{ IngredientsDisponibles.Single(x => x.Id==1) }
+                },
+                new Pizza{
+                        Id=2,
+                        Nom="Champi",
+                        Pate=PatesDisponibles.Single(x => x.Id==2),
+                        Ingredients=new List<Ingredient>{
+                            IngredientsDisponibles.Single(x => x.Id==1),
+                            IngredientsDisponibles.Single(x => x.Id==7)
+                        }
+                },
+            };
+        }
+
+        public static Pizza? GetPizza(int id)
+        {
+            return _PizzasMock.SingleOrDefault(x => x.Id == id);
+        }
     }
 }
