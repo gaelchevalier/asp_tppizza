@@ -34,3 +34,14 @@ E:\test\251 - Développement Web côté serveur en ASP.Net Core\TP\Module 5\TP2\
 E:\test\251 - Développement Web côté serveur en ASP.Net Core\TP\Module 5\TP2\Fichiers à fournir\BO\obj\Debug\net6.0\refint\BO.dll
 E:\test\251 - Développement Web côté serveur en ASP.Net Core\TP\Module 5\TP2\Fichiers à fournir\BO\obj\Debug\net6.0\BO.pdb
 E:\test\251 - Développement Web côté serveur en ASP.Net Core\TP\Module 5\TP2\Fichiers à fournir\BO\obj\Debug\net6.0\ref\BO.dll
+C:\Users\Utilisateur\source\repos\TPPizza\BO\bin\Debug\net6.0\BO.deps.json
+C:\Users\Utilisateur\source\repos\TPPizza\BO\bin\Debug\net6.0\BO.dll
+C:\Users\Utilisateur\source\repos\TPPizza\BO\bin\Debug\net6.0\BO.pdb
+C:\Users\Utilisateur\source\repos\TPPizza\BO\obj\Debug\net6.0\BO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Utilisateur\source\repos\TPPizza\BO\obj\Debug\net6.0\BO.AssemblyInfoInputs.cache
+C:\Users\Utilisateur\source\repos\TPPizza\BO\obj\Debug\net6.0\BO.AssemblyInfo.cs
+C:\Users\Utilisateur\source\repos\TPPizza\BO\obj\Debug\net6.0\BO.csproj.CoreCompileInputs.cache
+C:\Users\Utilisateur\source\repos\TPPizza\BO\obj\Debug\net6.0\BO.dll
+C:\Users\Utilisateur\source\repos\TPPizza\BO\obj\Debug\net6.0\refint\BO.dll
+C:\Users\Utilisateur\source\repos\TPPizza\BO\obj\Debug\net6.0\BO.pdb
+C:\Users\Utilisateur\source\repos\TPPizza\BO\obj\Debug\net6.0\ref\BO.dll
