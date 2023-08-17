@@ -1,0 +1,36 @@
+C:\Users\hboisgontier\Documents\Hervé\Cours\22-ASP.Net\2022\TP\Module5\TPPizza\BO\bin\Debug\net6.0\BO.deps.json
+C:\Users\hboisgontier\Documents\Hervé\Cours\22-ASP.Net\2022\TP\Module5\TPPizza\BO\bin\Debug\net6.0\BO.dll
+C:\Users\hboisgontier\Documents\Hervé\Cours\22-ASP.Net\2022\TP\Module5\TPPizza\BO\bin\Debug\net6.0\BO.pdb
+C:\Users\hboisgontier\Documents\Hervé\Cours\22-ASP.Net\2022\TP\Module5\TPPizza\BO\obj\Debug\net6.0\BO.csproj.AssemblyReference.cache
+C:\Users\hboisgontier\Documents\Hervé\Cours\22-ASP.Net\2022\TP\Module5\TPPizza\BO\obj\Debug\net6.0\BO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hboisgontier\Documents\Hervé\Cours\22-ASP.Net\2022\TP\Module5\TPPizza\BO\obj\Debug\net6.0\BO.AssemblyInfoInputs.cache
+C:\Users\hboisgontier\Documents\Hervé\Cours\22-ASP.Net\2022\TP\Module5\TPPizza\BO\obj\Debug\net6.0\BO.AssemblyInfo.cs
+C:\Users\hboisgontier\Documents\Hervé\Cours\22-ASP.Net\2022\TP\Module5\TPPizza\BO\obj\Debug\net6.0\BO.csproj.CoreCompileInputs.cache
+C:\Users\hboisgontier\Documents\Hervé\Cours\22-ASP.Net\2022\TP\Module5\TPPizza\BO\obj\Debug\net6.0\BO.dll
+C:\Users\hboisgontier\Documents\Hervé\Cours\22-ASP.Net\2022\TP\Module5\TPPizza\BO\obj\Debug\net6.0\refint\BO.dll
+C:\Users\hboisgontier\Documents\Hervé\Cours\22-ASP.Net\2022\TP\Module5\TPPizza\BO\obj\Debug\net6.0\BO.pdb
+C:\Users\hboisgontier\Documents\Hervé\Cours\22-ASP.Net\2022\TP\Module5\TPPizza\BO\obj\Debug\net6.0\ref\BO.dll
+C:\Users\hboisgontier\Documents\Hervé\Cours\22-ASP.Net\2022\TP\Module5\TP2\TPPizza\BO\bin\Debug\net6.0\BO.deps.json
+C:\Users\hboisgontier\Documents\Hervé\Cours\22-ASP.Net\2022\TP\Module5\TP2\TPPizza\BO\bin\Debug\net6.0\BO.dll
+C:\Users\hboisgontier\Documents\Hervé\Cours\22-ASP.Net\2022\TP\Module5\TP2\TPPizza\BO\bin\Debug\net6.0\BO.pdb
+C:\Users\hboisgontier\Documents\Hervé\Cours\22-ASP.Net\2022\TP\Module5\TP2\TPPizza\BO\obj\Debug\net6.0\BO.csproj.AssemblyReference.cache
+C:\Users\hboisgontier\Documents\Hervé\Cours\22-ASP.Net\2022\TP\Module5\TP2\TPPizza\BO\obj\Debug\net6.0\BO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hboisgontier\Documents\Hervé\Cours\22-ASP.Net\2022\TP\Module5\TP2\TPPizza\BO\obj\Debug\net6.0\BO.AssemblyInfoInputs.cache
+C:\Users\hboisgontier\Documents\Hervé\Cours\22-ASP.Net\2022\TP\Module5\TP2\TPPizza\BO\obj\Debug\net6.0\BO.AssemblyInfo.cs
+C:\Users\hboisgontier\Documents\Hervé\Cours\22-ASP.Net\2022\TP\Module5\TP2\TPPizza\BO\obj\Debug\net6.0\BO.csproj.CoreCompileInputs.cache
+C:\Users\hboisgontier\Documents\Hervé\Cours\22-ASP.Net\2022\TP\Module5\TP2\TPPizza\BO\obj\Debug\net6.0\BO.dll
+C:\Users\hboisgontier\Documents\Hervé\Cours\22-ASP.Net\2022\TP\Module5\TP2\TPPizza\BO\obj\Debug\net6.0\refint\BO.dll
+C:\Users\hboisgontier\Documents\Hervé\Cours\22-ASP.Net\2022\TP\Module5\TP2\TPPizza\BO\obj\Debug\net6.0\BO.pdb
+C:\Users\hboisgontier\Documents\Hervé\Cours\22-ASP.Net\2022\TP\Module5\TP2\TPPizza\BO\obj\Debug\net6.0\ref\BO.dll
+E:\test\251 - Développement Web côté serveur en ASP.Net Core\TP\Module 5\TP2\Fichiers à fournir\BO\bin\Debug\net6.0\BO.deps.json
+E:\test\251 - Développement Web côté serveur en ASP.Net Core\TP\Module 5\TP2\Fichiers à fournir\BO\bin\Debug\net6.0\BO.dll
+E:\test\251 - Développement Web côté serveur en ASP.Net Core\TP\Module 5\TP2\Fichiers à fournir\BO\bin\Debug\net6.0\BO.pdb
+E:\test\251 - Développement Web côté serveur en ASP.Net Core\TP\Module 5\TP2\Fichiers à fournir\BO\obj\Debug\net6.0\BO.csproj.AssemblyReference.cache
+E:\test\251 - Développement Web côté serveur en ASP.Net Core\TP\Module 5\TP2\Fichiers à fournir\BO\obj\Debug\net6.0\BO.GeneratedMSBuildEditorConfig.editorconfig
+E:\test\251 - Développement Web côté serveur en ASP.Net Core\TP\Module 5\TP2\Fichiers à fournir\BO\obj\Debug\net6.0\BO.AssemblyInfoInputs.cache
+E:\test\251 - Développement Web côté serveur en ASP.Net Core\TP\Module 5\TP2\Fichiers à fournir\BO\obj\Debug\net6.0\BO.AssemblyInfo.cs
+E:\test\251 - Développement Web côté serveur en ASP.Net Core\TP\Module 5\TP2\Fichiers à fournir\BO\obj\Debug\net6.0\BO.csproj.CoreCompileInputs.cache
+E:\test\251 - Développement Web côté serveur en ASP.Net Core\TP\Module 5\TP2\Fichiers à fournir\BO\obj\Debug\net6.0\BO.dll
+E:\test\251 - Développement Web côté serveur en ASP.Net Core\TP\Module 5\TP2\Fichiers à fournir\BO\obj\Debug\net6.0\refint\BO.dll
+E:\test\251 - Développement Web côté serveur en ASP.Net Core\TP\Module 5\TP2\Fichiers à fournir\BO\obj\Debug\net6.0\BO.pdb
+E:\test\251 - Développement Web côté serveur en ASP.Net Core\TP\Module 5\TP2\Fichiers à fournir\BO\obj\Debug\net6.0\ref\BO.dll
