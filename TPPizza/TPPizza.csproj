@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Documents\Formation ENI\ASPNET\Modules\M05\TP-02\Fichiers à fournir\BO\BO.csproj" />
+    <ProjectReference Include="..\BO\BO.csproj" />
   </ItemGroup>
 
 </Project>
