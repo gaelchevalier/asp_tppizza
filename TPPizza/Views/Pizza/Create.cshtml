@@ -12,35 +12,9 @@
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
-            @* <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Nom" class="control-label"></label>
-                <input asp-for="Nom" class="form-control" />
-                <span asp-validation-for="Nom" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Pate" class="control-label"></label>
-                <select asp-for="Pate.Id" class="form-select">
-                    @foreach(var pate in Model.Pates)
-                    {
-                        <option value="@pate.Id">@pate.Nom</option>
-                    }
-                </select>
-                <span asp-validation-for="Pates" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Ingredients" class="control-label"></label>
-                <select asp-for="SelectedIngredients" class="form-select">
-                    @foreach (var ingredient in Model.Ingredients)
-                    {
-                        <option value="@ingredient.Id">@ingredient.Nom</option>
-                    }
-                </select>
-                <span asp-validation-for="Pates" class="text-danger"></span>
-            </div> *@
             <partial name="_pizzaForm" />
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <submit label="Create"/>  
             </div>
         </form>
     </div>

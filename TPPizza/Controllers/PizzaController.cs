@@ -49,6 +49,13 @@ namespace TPPizza.Controllers
                 var pateSelected = PatesDisponibles.Single(x => x.Id == pizzaData.Pate.Id);
                 List<int> selectedIngredientsIds = pizzaData.SelectedIngredients;
                 List<Ingredient> selectedIngredients = IngredientsDisponibles.Where(ing => selectedIngredientsIds.Contains(ing.Id)).ToList();
+
+                /*if(_PizzasMock.Any(pizza => pizza.Nom == pizzaData.Nom))
+                {
+                    ModelState.AddModelError("Nom", "Une autre pizza porte déjà ce nom");
+                    return View(pizzaData);
+                }*/
+
                 Pizza newPizza = new Pizza { Id = newPizzaId, Nom = pizzaData.Nom, Pate = pateSelected, Ingredients = selectedIngredients };
                 _PizzasMock.Add(newPizza);
                 return RedirectToAction(nameof(Index), _PizzasMock);
