@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using BO;
 using System;
+using TPPizza.ViewModels;
+using Humanizer;
 
 namespace TPPizza.Controllers
 {
@@ -30,43 +32,74 @@ namespace TPPizza.Controllers
         // GET: PizzaController/Create
         public ActionResult Create()
         {
-            IList<Pate> pates = PatesDisponibles;
-            return View(pates);
+            PizzaViewData pizzaVM = new PizzaViewData();
+            pizzaVM.Pates = PatesDisponibles;
+            pizzaVM.Ingredients = IngredientsDisponibles;
+            return View(pizzaVM);
         }
 
         // POST: PizzaController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(PizzaViewData pizzaData)
         {
             try
             {
-                return RedirectToAction(nameof(Index));
+                int newPizzaId = _PizzasMock.Count + 1;
+                var pateSelected = PatesDisponibles.Single(x => x.Id == pizzaData.Pate.Id);
+                List<int> selectedIngredientsIds = pizzaData.SelectedIngredients;
+                List<Ingredient> selectedIngredients = IngredientsDisponibles.Where(ing => selectedIngredientsIds.Contains(ing.Id)).ToList();
+                Pizza newPizza = new Pizza { Id = newPizzaId, Nom = pizzaData.Nom, Pate = pateSelected, Ingredients = selectedIngredients };
+                _PizzasMock.Add(newPizza);
+                return RedirectToAction(nameof(Index), _PizzasMock);
             }
             catch
             {
-                return View();
+                return View(nameof(Index), _PizzasMock);
             }
         }
 
         // GET: PizzaController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            Pizza? pizza = GetPizza(id);
+            List<int> selectedIngredientsId = pizza.Ingredients.Select(x => x.Id).ToList();
+            PizzaViewData pizzaVM = new PizzaViewData { 
+                Nom=pizza.Nom, 
+                Pate=pizza.Pate, 
+                SelectedIngredients= selectedIngredientsId,
+                Pates=PatesDisponibles, 
+                Ingredients=IngredientsDisponibles
+            };
+
+            if (pizza == null)
+            {
+                return View(nameof(Index));
+            }
+            return View(pizzaVM);
         }
 
         // POST: PizzaController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit([FromRoute]int id, PizzaViewData pizzaData)
         {
             try
             {
-                return RedirectToAction(nameof(Index));
+                Pizza? pizzaToEdit = GetPizza(id);
+
+                if (pizzaToEdit == null)
+                {
+                    return View(nameof(Index));
+                }
+                pizzaToEdit.Nom = pizzaData.Nom;
+                pizzaToEdit.Pate = PatesDisponibles.Single(x => x.Id == pizzaData.Pate.Id);
+                pizzaToEdit.Ingredients = IngredientsDisponibles.Where(ing => pizzaData.SelectedIngredients.Contains(ing.Id)).ToList();
+                return RedirectToAction(nameof(Index), _PizzasMock);
             }
             catch
             {
-                return View();
+                return View(nameof(Index), _PizzasMock);
             }
         }
 

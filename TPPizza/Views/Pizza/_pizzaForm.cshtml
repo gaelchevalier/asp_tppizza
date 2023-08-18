@@ -1,0 +1,29 @@
+﻿@using TPPizza.ViewModels
+@model PizzaViewData
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<div class="form-group">
+    <label asp-for="Nom" class="control-label"></label>
+    <input asp-for="Nom" class="form-control" />
+    <span asp-validation-for="Nom" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Pate" class="control-label"></label>
+    <select asp-for="Pate.Id" class="form-select">
+        @foreach (var pate in Model.Pates)
+        {
+            <option value="@pate.Id">@pate.Nom</option>
+        }
+    </select>
+    <span asp-validation-for="Pate.Id" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Ingredients" class="control-label"></label>
+    <select asp-for="SelectedIngredients" class="form-select">
+        @foreach (var ingredient in Model.Ingredients)
+        {
+            <option value="@ingredient.Id">@ingredient.Nom</option>
+        }
+    </select>
+    <span asp-validation-for="SelectedIngredients" class="text-danger"></span>
+</div>
